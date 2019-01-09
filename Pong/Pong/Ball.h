@@ -32,10 +32,13 @@ public:
 	void Move();
 
 	friend std::ostream & operator << (std::ostream & o, Ball b);
+
 	// Getters
 	inline int getX();
 	inline int getY();
 	inline eDir getDirection();
+
+	// Destructors
 	~Ball();
 };
 

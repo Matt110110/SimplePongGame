@@ -3,12 +3,13 @@
 
 #include "pch.h"
 #include "Ball.h"
+#include "Paddle.h"
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	Ball b(0, 0);
+	/*Ball b(0, 0);
 	cout << b << endl;
 	b.RandomDirection();
 	cout << b << endl;
@@ -17,7 +18,21 @@ int main()
 	b.RandomDirection();
 	b.Move();
 	cout << b << endl;
-	getchar();
+	b.RandomDirection();
+	b.Move();
+	cout << b << endl;*/
+
+	Paddle p1(0, 0);
+	Paddle p2(10, 0);
+	cout << p1 << endl;
+	cout << p2 << endl;
+	p1.moveUp();
+	//p1.Reset();
+	p2.moveDown();
+	cout << p1 << endl;
+	cout << p2 << endl;
+
+	getchar(); // Added to hold the console instead of going straight to return 0
 	return 0;
 }
 

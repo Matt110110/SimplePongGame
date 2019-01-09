@@ -86,6 +86,6 @@ Ball::~Ball()
 
 std::ostream & operator<<(std::ostream & o, Ball b)
 {
-	o << "Ball [ " << b._x << " , " << b._y << " ] [ " << (int)b._direction << " ]" << std::endl;
+	o << "Ball [ " << b.getX() << " , " << b.getY() << " ] [ " << (int)b.getDirection() << " ]" << std::endl;
 	return o;
 }
