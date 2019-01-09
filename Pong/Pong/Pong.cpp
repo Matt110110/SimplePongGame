@@ -2,11 +2,23 @@
 //
 
 #include "pch.h"
+#include "Ball.h"
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	Ball b(0, 0);
+	cout << b << endl;
+	b.RandomDirection();
+	cout << b << endl;
+	b.Move();
+	cout << b << endl;
+	b.RandomDirection();
+	b.Move();
+	cout << b << endl;
+	getchar();
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

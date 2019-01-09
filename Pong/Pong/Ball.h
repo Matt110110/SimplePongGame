@@ -1,6 +1,8 @@
 #pragma once
+#include <iostream>
 /*
 * All private variables start with underscore (_)
+* Don't use Using namespace std in class files.
 */
 enum class eDir // Since this is a enumeration class use eDir::<value> to access the value
 {
@@ -27,7 +29,9 @@ public:
 	void Reset();
 	void RandomDirection();
 	void ChangeDirection(eDir d);
+	void Move();
 
+	friend std::ostream & operator << (std::ostream & o, Ball b);
 	// Getters
 	inline int getX();
 	inline int getY();
