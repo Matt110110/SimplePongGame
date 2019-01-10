@@ -1,4 +1,3 @@
-﻿  Paddle.cpp
-  Pong.cpp
-  Generating Code...
+﻿  GameManager.cpp
+c:\code\git\simpleponggame\pong\pong\gamemanager.cpp(205): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Pong.vcxproj -> C:\Code\Git\SimplePongGame\Pong\Debug\Pong.exe

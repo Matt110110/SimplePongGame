@@ -16,6 +16,10 @@ private:
 	Paddle * _p2;
 public:
 	void ScoreUp(Paddle * p);
+	void Draw();
+	void Input();
+	void Logic();
+	void Run();
 	GameManager(int width, int height);
 	GameManager();
 	~GameManager();

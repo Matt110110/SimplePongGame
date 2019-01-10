@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "Ball.h"
 #include "Paddle.h"
+#include "GameManager.h"
 #include <iostream>
 using namespace std;
 
@@ -22,15 +23,18 @@ int main()
 	b.Move();
 	cout << b << endl;*/
 
-	Paddle p1(0, 0);
-	Paddle p2(10, 0);
-	cout << p1 << endl;
-	cout << p2 << endl;
-	p1.moveUp();
-	//p1.Reset();
-	p2.moveDown();
-	cout << p1 << endl;
-	cout << p2 << endl;
+	//Paddle p1(0, 0);
+	//Paddle p2(10, 0);
+	//cout << p1 << endl;
+	//cout << p2 << endl;
+	//p1.moveUp();
+	////p1.Reset();
+	//p2.moveDown();
+	//cout << p1 << endl;
+	//cout << p2 << endl;
+
+	GameManager g(40, 20);
+	g.Run();
 
 	getchar(); // Added to hold the console instead of going straight to return 0
 	return 0;
